@@ -7,7 +7,15 @@
    <input type="button" value="Update" (click)="clickMe($event)" >
 
 
-   
-   <!-- <input type="text" class="form-control mt-2" #val (input)="onInputChange(val.value)" placeholder="enter last name" style="width: 250px;">
+   <p>-------------one way data binding---------------</p>
+    <input type="text" class="form-control mt-2" #val (input)="onInputChange2(val.value)" placeholder="enter last name" style="width: 250px;">
    <h2>{{surname}}</h2>
-   </div> -->
+
+   <p>-----------------one way  data binding-----------------</p>
+   <ol type="1">
+    <Li>Enter Your Email-id&nbsp;&nbsp; :-&nbsp;&nbsp;<input type="email"  placeholder="abc@gmail.com" #email (input)="twowayData(email.value)" (change)="reset($event)"></Li>
+    <Li>Your Username is {{username}}</Li>
+    <Li><input type="button" value="Reset" (click)="reset($event)"></Li>
+    <Li></Li>
+   </ol>
+   </div> 

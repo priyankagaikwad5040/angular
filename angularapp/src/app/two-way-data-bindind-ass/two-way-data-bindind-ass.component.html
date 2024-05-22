@@ -1,0 +1,9 @@
+<div class="container" >
+<ol>
+    <li><h5>Enter Mobile No.</h5><input type="number" placeholder="10 digits"  (change)="reset($event)"  #val (input)="onInput(val.value)"></li>
+    <li><h4>Entered Mobile No Is</h4>  :-{{mob}}</li>
+    
+    <li><input type="button" value="Reset" (reset)="reset($event)" ></li>
+    <li>{{msg}}</li>
+</ol>
+</div>

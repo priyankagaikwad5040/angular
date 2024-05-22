@@ -13,6 +13,7 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { TwowayDataBindingComponent } from './twoway-data-binding/twoway-data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { TwoWAyDataBindindAssComponent } from './two-way-data-bindind-ass/two-way-data-bindind-ass.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     WarningAlertComponent,
     SuccessAlertComponent,
     DataBindingComponent,
-    TwowayDataBindingComponent
+    TwowayDataBindingComponent,
+    TwoWAyDataBindindAssComponent
 
   
   ],

@@ -9,6 +9,7 @@ export class DataBindingComponent implements OnInit {
   name :string ="";
   surname : string="";
   update:string="";
+  username :string="";
   constructor() { }
 
   ngOnInit(): void { 
@@ -22,6 +23,9 @@ export class DataBindingComponent implements OnInit {
   onInputChange(value : any) {    
     this.surname = value;     
   }
+  onInputChange2(value : any) {    
+    this.surname = value;     
+  }
   clickMe(event : Event){
     var inputName = event.target as HTMLInputElement;
     if(this.name==inputName.value){
@@ -31,6 +35,19 @@ export class DataBindingComponent implements OnInit {
 
 this.name="input Updated";
   }
+  twowayData(value : any) {    
+    this.username = value;     
+  }
+
+  reset(event :Event){
+    
+    var inputName1 = event.target as HTMLInputElement;
+    if(this.username==inputName1.value){
+      inputName1.value="";
+      this.username="";
+   
+    }
+    }
   
     
     
