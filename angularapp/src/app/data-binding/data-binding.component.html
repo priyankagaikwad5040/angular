@@ -1,0 +1,13 @@
+ <div class="container mt-5">
+   <!-- <input type="text" class="form-control mt-2" (input)="onInputChange($event)" placeholder="enter the name" style="width: 250px;"> -->
+   <p>------------------ Event Data Binding----------------</p>
+   <input type="text" class="form-control mt-2" (input)="onInputChange1($event)" (change)="clickMe($event)" placeholder="enter the First name" style="width: 250px;">
+   <h3>{{name}}</h3>
+
+   <input type="button" value="Update" (click)="clickMe($event)" >
+
+
+   
+   <!-- <input type="text" class="form-control mt-2" #val (input)="onInputChange(val.value)" placeholder="enter last name" style="width: 250px;">
+   <h2>{{surname}}</h2>
+   </div> -->

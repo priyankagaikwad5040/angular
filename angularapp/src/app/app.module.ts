@@ -10,6 +10,9 @@ import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
+import { TwowayDataBindingComponent } from './twoway-data-binding/twoway-data-binding.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,13 +23,16 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
     BodyComponent,
     FooterComponent,
     WarningAlertComponent,
-    SuccessAlertComponent
+    SuccessAlertComponent,
+    DataBindingComponent,
+    TwowayDataBindingComponent
 
   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
