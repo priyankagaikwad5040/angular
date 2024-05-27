@@ -1,0 +1,22 @@
+
+<div >
+   <input type="checkbox" name="check" id="check" (change)="checked()">show
+   <div  *ngIf="courses.length > 0" >
+   <table class="table" >
+      <th>Name Of Course</th>
+
+         <tbody>
+         <tr *ngFor="let i of courses">
+            <td>{{i}}</td>
+          </tbody>
+   </table>
+</div>
+</div>
+<div [ngSwitch]="year">
+
+   <p *ngSwitchCase="'2021'"> 1st year</p>
+   <p *ngSwitchCase="'2022'">2nd year</p>
+   <p *ngSwitchCase="'2023'">3rd year</p>
+   <p *ngSwitchCase="'2024'">final Year</p>
+   <p *ngSwitchDefault="">Have a successful career !!!</p>
+</div>

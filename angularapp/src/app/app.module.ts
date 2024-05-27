@@ -14,6 +14,9 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { TwowayDataBindingComponent } from './twoway-data-binding/twoway-data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { TwoWAyDataBindindAssComponent } from './two-way-data-bindind-ass/two-way-data-bindind-ass.component';
+import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
+import { SwitchComponent } from './switch/switch.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { TwoWAyDataBindindAssComponent } from './two-way-data-bindind-ass/two-wa
     SuccessAlertComponent,
     DataBindingComponent,
     TwowayDataBindingComponent,
-    TwoWAyDataBindindAssComponent
+    TwoWAyDataBindindAssComponent,
+    AddToCartComponent,
+    SwitchComponent,
+    DirectivesComponent
 
   
   ],
