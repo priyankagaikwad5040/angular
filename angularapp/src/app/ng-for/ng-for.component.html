@@ -1,0 +1,9 @@
+<h3>Choose Country</h3> 
+<select #country (change)="update($event)"> 
+	<option value="default">----</option> 
+	<option *ngFor="let country of country1" [value]="country"> 
+		{{country}} 
+	</option> 
+</select> 
+
+<p>You selected {{selected}}</p> 

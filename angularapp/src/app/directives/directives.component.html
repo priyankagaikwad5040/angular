@@ -1,6 +1,6 @@
 
 <div >
-   <input type="checkbox" name="check" id="check" (change)="checked()">show
+   <input type="checkbox" name="check" id="check" (change)="checked()">show the course details <label for="" font-color="red">when you click on checkbox it will show the course details</label>
    <div  *ngIf="courses.length > 0" >
    <table class="table" >
       <th>Name Of Course</th>
@@ -13,7 +13,7 @@
 </div>
 </div>
 <div [ngSwitch]="year">
-
+<h3>SwitchCase Example</h3>
    <p *ngSwitchCase="'2021'"> 1st year</p>
    <p *ngSwitchCase="'2022'">2nd year</p>
    <p *ngSwitchCase="'2023'">3rd year</p>

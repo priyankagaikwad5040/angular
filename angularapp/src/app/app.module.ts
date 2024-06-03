@@ -17,6 +17,29 @@ import { TwoWAyDataBindindAssComponent } from './two-way-data-bindind-ass/two-wa
 import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 import { SwitchComponent } from './switch/switch.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
+import { NgclassComponent } from './ngclass/ngclass.component';
+import { CustomDirective } from './directivess/custom.directive';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { NgForComponent } from './ng-for/ng-for.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { SimpleFormComponent } from './simple-form/simple-form.component';
+// import { CountryStatesComponent } from './country-states/country-states.component';
+// import { CountryStateSelectorComponent } from './country-state-selector/country-state-selector.component';
+import { RegistrationFormComponent } from './registration-form/registration-form.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import { PersonalInfoComponent } from './personal-info/personal-info.component';
+import { MatDividerModule } from '@angular/material';
+import { MatProgressBarModule } from '@angular/material';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {FormBuilder,  ReactiveFormsModule} from '@angular/forms';
+import { MatSelectModule } from '@angular/material';
+import {MatRadioModule} from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -33,14 +56,39 @@ import { DirectivesComponent } from './directives/directives.component';
     TwoWAyDataBindindAssComponent,
     AddToCartComponent,
     SwitchComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    NgStyleComponent,
+    NgclassComponent,
+    CustomDirective,
+    ParentComponent,
+    ChildComponent,
+    NgForComponent,
+    SimpleFormComponent,
+    // CountryStatesComponent,
+    // CountryStateSelectorComponent,
+    RegistrationFormComponent,
+    PersonalInfoComponent,
+    
 
   
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule ,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MatSlideToggleModule,
+    MatInputModule,
+    MatCardModule,
+    MatButtonModule,
+     MatDividerModule,
+      MatButtonModule,
+       MatProgressBarModule ,
+       MatCheckboxModule,
+       MatSelectModule,
+       ReactiveFormsModule ,
+MatRadioModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

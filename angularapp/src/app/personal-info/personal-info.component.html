@@ -1,0 +1,128 @@
+<mat-card class="example-card">
+    <mat-card-header>
+       <mat-card-title>Sign Up Form</mat-card-title>
+     </mat-card-header>
+    <mat-card-content>
+      <form class="registration-form" #registrationForm="ngForm" (ngSubmit)="onSubmit(registrationForm)">
+        <mat-card-subtitle >Fill the Basic Information</mat-card-subtitle>
+        <mat-form-field>
+          <input 
+            type="text"
+            matInput
+            ngModel
+            name="FirstName"
+            placeholder="First Name"
+            
+            [required]="true"
+            
+            >
+      </mat-form-field>
+      
+     
+      <mat-form-field>
+        <input 
+          type="text"
+          matInput
+          ngModel
+          name="LastNmae"
+          placeholder="Last Name"
+          
+          [required]="true"
+          
+          >
+    </mat-form-field>
+
+     
+          <mat-form-field>
+              <input 
+                type="email"
+                matInput
+                ngModel
+                name="email"
+                placeholder="Email"
+                email
+                [required]="true"
+                
+                >
+          </mat-form-field>
+          <mat-form-field>
+              <input 
+                type="date"
+                matInput
+                ngModel
+                name="DOB"
+                placeholder="Date Of Birth"
+                
+                [required]="true"
+                >
+          </mat-form-field>
+          
+          <mat-form-field>
+            <input 
+              type="text"
+              matInput
+              ngModel
+              name="Qualification"
+              placeholder="Qualification"
+              
+              [required]="true"
+              >
+        </mat-form-field>
+        
+        <mat-form-field>
+          <input 
+            type="number"
+            matInput
+            ngModel
+            name="Passout-Year"
+            placeholder="Pass-Out Year"
+             [required]="true"
+            >
+      </mat-form-field>
+      
+        <!-- <section class="example-section">
+      <mat-checkbox class="example-margin" [(ngModel)]="checked">Checked</mat-checkbox>
+      <mat-checkbox class="example-margin" [(ngModel)]="indeterminate">Indeterminate</mat-checkbox>
+    </section> -->
+
+    <mat-form-field>
+      <mat-label>Marital Status</mat-label>
+      <mat-select>
+        <mat-option value="one">Married</mat-option>
+        <mat-option value="two">Single</mat-option>
+      </mat-select>
+      </mat-form-field> 
+      <mat-form-field>
+        <input 
+          type="text"
+          matInput
+          ngModel
+          name="Address"
+          placeholder="Address"
+           [required]="true"
+          >
+    </mat-form-field>
+    
+    <mat-form-field>
+      <input 
+        type="number"
+        matInput
+        ngModel
+        name="mobile"
+        placeholder="Mobile No."
+         [required]="true"
+        >
+  </mat-form-field>
+   
+     
+    
+        
+          <button mat-raised-button color="primary" type="submit" [disabled]="!registrationForm.valid">Submit</button>
+          <!-- <button mat-raised-button color="primary" type="reset" [disabled]="!registrationForm.valid">Reset</button> -->
+      </form>
+    </mat-card-content> 
+</mat-card>
+         
+          
+  
+  
