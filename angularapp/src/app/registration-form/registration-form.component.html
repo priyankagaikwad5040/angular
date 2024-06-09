@@ -1,4 +1,4 @@
-<mat-card class="registration-page">
+<!-- <mat-card class="registration-page">
     <mat-card-title>Registration (Template Driven)</mat-card-title>  
     <mat-card-content>
       <form class="registration-form" #registrationForm="ngForm" (ngSubmit)="onSubmit(registrationForm)">
@@ -39,6 +39,7 @@
             chars, but it only has {{password.errors?.['minlength']?.actualLength}}</mat-error>  
           
           </mat-form-field>
+          <div ngModelGroup="Address">
           <mat-form-field>
             <mat-label> Select County</mat-label>
             <mat-select name="country" id="country" [(ngModel)]="selectedCountryId" (selectionChange)="onCountryChange()">
@@ -54,24 +55,19 @@
                 {{state.name}}
               </mat-option>
             </mat-select>
-          </mat-form-field>
-          <!-- <mat-form-field>
-            <mat-radio-group>Gender :
-              <mat-radio-button value="male">Male</mat-radio-button>
-              <mat-radio-button value="female">Female</mat-radio-button>
-            </mat-radio-group>
-            
-          </mat-form-field> -->  <mat-form-field>
+         </mat-form-field></div>
+          <!--  <div ngModelGroup="Gender" > <mat-form-field>
             <mat-label>select Gender</mat-label>
            <mat-radio-group>
-            <mat-radio-button value="male">
+            <mat-radio-button value="male" name="male">
               Male
             </mat-radio-button>
-          <mat-radio-button value="Female">Female</mat-radio-button>  </mat-radio-group>
+          <mat-radio-button value="Female" name="female">Female</mat-radio-button>  </mat-radio-group>
                  </mat-form-field>
+                </div>   -->
         
           <!-- <button mat-raised-button color="primary" type="submit">Submit</button> -->
           <button mat-raised-button color="primary" type="submit" >Submit</button>
       </form>
     </mat-card-content> 
-</mat-card>
+</mat-card> -->

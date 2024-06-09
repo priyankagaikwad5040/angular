@@ -40,6 +40,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {FormBuilder,  ReactiveFormsModule} from '@angular/forms';
 import { MatSelectModule } from '@angular/material';
 import {MatRadioModule} from '@angular/material/radio';
+import { RegWithValidationComponent } from './reg-with-validation/reg-with-validation.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +70,8 @@ import {MatRadioModule} from '@angular/material/radio';
     // CountryStateSelectorComponent,
     RegistrationFormComponent,
     PersonalInfoComponent,
+    RegWithValidationComponent,
+    ReactiveFormComponent,
     
 
   

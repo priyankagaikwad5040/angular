@@ -7,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SwitchComponent implements OnInit {
 //arraof string
-daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+// daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 // to get the current date then calls getDay method. 
 // Sunday 0 , Monday 1 
-todayIndex = new Date().getDay();
+public day = new Date().getDay()
 
-day: string = this.daysOfWeek[this.todayIndex];
+// day: string = this.daysOfWeek[this.todayIndex];
   constructor() { }
 
   ngOnInit(): void {
